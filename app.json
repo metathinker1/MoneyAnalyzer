@@ -1,0 +1,7 @@
+{
+  "name": "Money Analyzer",
+  "description": "A cool budgeting tool",
+  "image": "heroku/python",
+  "repository": "https://github.com/metathinker1/MoneyAnalyzer",
+  "keywords": ["python", "flask" ]
+}
