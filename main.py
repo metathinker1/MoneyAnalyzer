@@ -1,9 +1,14 @@
 import logging
-from flask import Flask, request
+from flask import Flask, request, render_template
 import json
 
 
 app = Flask(__name__)
+
+@app.route('/')
+def landing_page():
+    message = "Hello, World"
+    return render_template('index.html', message=message)
 
 
 @app.route('/moneyanlz/ping', methods=['GET'])

@@ -1,7 +1,11 @@
 import pandas as pd
 #import re
 
+''' Assumptions
+- One file_path per account in MoneyWell
+'''
 def import_moneywell_transaction_details_file(file_path):
+    # TODO: Get the TransactionAccountId from the file_path
     with open(file_path) as fp:
         is_first_line = True
         transactions_list = []
